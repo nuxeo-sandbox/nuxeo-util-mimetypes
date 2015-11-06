@@ -19,38 +19,18 @@ Contributors:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <title>DAM Dashboard Demo</title>
+
+  <title>nuxeo-util-mimetypes Demo</title>
 
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-  <script src="../../moment/min/moment-with-locales.js"></script>
 
-  <link rel="import" href="../elements.html">
+  <link rel="import" href="../nuxeo-util-mimetypes.html">
 
   <style is="custom-style">
     body {
       background: #fafafa;
       font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       color: #444;
-    }
-    
-    #header-title {
-      font-size: 140%;
-      display: table;
-      margin: 0 auto;
-      color: #213f7d;
-    }
-    
-    #logo {
-      background: transparent url('http://dam.cloud.nuxeo.com/nuxeo/img/nuxeo_dam_logo.png') no-repeat;
-      background-size: cover;
-      display: inline-block;
-      height: 20px;
-      width: 186px;
-      ;
-    }
-    
-    paper-toolbar {
-      --paper-toolbar-background: #ffffff;
     }
   </style>
 
@@ -60,31 +40,22 @@ Contributors:
 
   <template is="dom-bind" id="app">
 
-    <!-- Define a connection to our Nuxeo server -->
-    <nuxeo-connection url="/nuxeo"></nuxeo-connection>
+    <h1>Get File Extensions from MIME Type</h1>
+    <p>application/pdf ->
+      <nuxeo-util-mimetypes mime-type="application/pdf"></nuxeo-util-mimetypes>
+    </p>
 
-    <paper-header-panel>
-      <paper-toolbar>
-        <div id="logo"></div>
-        <div id="header-title">DAM Dashboard</div>
-        <div id="header-dateRange">
-          <input type="date" value="{{startDate::change}}">
-          <input type="date" value="{{endDate::change}}">
-        </div>
-      </paper-toolbar>
+    <h1>Get MIME Type from File Extension</h1>
+    <p>.gdoc ->
+      <nuxeo-util-mimetypes file-extension=".gdoc"></nuxeo-util-mimetypes>
+    </p>
 
-      <!-- Include our element and specify a start and end date -->
-      <nuxeo-dam-dashboard start-date="[[startDate]]" end-date="[[endDate]]"></nuxeo-dam-dashboard>
-
-    </paper-header-panel>
+    <h1>Get "Friendly Name" from from MIME Type</h1>
+    <p>.gsheet ->
+      <nuxeo-util-mimetypes mime-type="application/vnd.google-apps.spreadsheet" friendly="true"></nuxeo-util-mimetypes>
+    </p>
 
   </template>
-  <script>
-    var t = document.querySelector('template');
-    var currentDate = moment();
-    t.endDate = currentDate.format("YYYY-MM-DD");
-    t.startDate = currentDate.subtract(6, 'months').format("YYYY-MM-DD");
-  </script>
 </body>
 
 </html>

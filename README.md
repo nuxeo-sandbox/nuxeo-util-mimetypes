@@ -1,47 +1,30 @@
-# Nuxeo DAM Dashboard
+# nuxeo-util-mimetypes
 
-A dashboard for Nuxeo applications that contain the DAM add-on. It should work with any Nuxeo application unless the DAM document types and/or audit events have been overridden.
-
-These are Polymer Web components.
+An element for dealing with MIME types, file extensions, and (optionally) friendly file names.
 
 ## Requirements
 
-The DAM add-on must be installed in the Nuxeo application.
-
 Install Node.js (I use Homebrew)
 
-Navigate to the folder containing `dam-dashboard.html` in shell/terminal and then:
+Navigate to the folder containing `nuxeo-util-mimetypes.html` in shell/terminal and then:
 
+    npm install -g polyserve
     npm install -g bower
-    npm install -g grunt
-    npm install
     bower install
 
 ## Usage
 
-### Grunt
+You can run it via `polyserve` but you may need to make a few changes:
 
-You can run it via:
-
-    grunt
-
-By default a proxy is created to localhost, to handle Nuxeo authentication.  You can modify "Gruntfile.js" to change the proxy settings.
-
-### Polyserve
-
-You can alternatively run it via `polyserve` but you need to make a few changes:
-
-* Install polyserve:
-  * `npm -install -g polyserve`
 * Edit `demo/index.html` and modify the `<nuxeo-connection>` element with the URL for the server. For example:
-  * `<nuxeo-connection url="http://localhost:8080/nuxeo"></nuxeo-connection>`
+  * `<nuxeo-connection url="http://localhost:8080/nuxeo"></nuxeo-connection>` (default).
   * The user name and password can be included here as well. See the [`nuxeo-elements` documentation](https://doc.nuxeo.com/x/XJCRAQ).
 
 Then run it:
 
     polyserve -p 3000
 
-Once running, you can checkout the demo at `http://localhost:3000/components/nuxeo-dam-dashboard/demo`.
+Once running, you can checkout the demo at `http://localhost:3000/components/nuxeo-util-mimetypes/demo`.
 
 ## About Nuxeo
 

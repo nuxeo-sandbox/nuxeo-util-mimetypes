@@ -1,0 +1,53 @@
+<!--
+(C) Copyright 2015 Nuxeo SA (http://nuxeo.com/) and contributors.
+
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the GNU Lesser General Public License
+(LGPL) version 2.1 which accompanies this distribution, and is available at
+http://www.gnu.org/licenses/lgpl.html
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Lesser General Public License for more details.
+
+Contributors:
+  Josh Fletcher <jfletcher@nuxeo.com>
+-->
+<!--
+An element.
+
+Example:
+
+
+
+@group Nuxeo Utils
+@element nuxeo-util-mimetypes
+@demo demo/index.html
+-->
+<script src="mime-type-data.js"></script>
+
+<script>
+  Polymer({
+
+    is: 'nuxeo-util-mimetypes',
+
+    // Expose startDate and endDate as properties
+    properties: {
+      mimeType: String,
+      fileExtension: String,
+      friendly: String
+    },
+
+    getExtsFromMimeType: function (mimeType) {
+      for (var i = 0; i < this.mimeTypeData.length; i++) {
+        if (this.mimeTypeData[i].mimeType === mimeType) {
+          return this.mimeTypeData[i].fileExtensions;
+        }
+      }
+      // Not found.
+      return null;
+    },
+
+  });
+</script>

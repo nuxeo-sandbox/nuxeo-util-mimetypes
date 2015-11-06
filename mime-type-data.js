@@ -14,21 +14,11 @@ Lesser General Public License for more details.
 Contributors:
   Josh Fletcher <jfletcher@nuxeo.com>
 */
-var mimeTypes = {
-  findByMimeType: function (mimeType) {
-    for (var i = 0; i < this.mimeTypes.length; i++) {
-      if (this.mimeTypes[i].mimeType === mimeType) {
-        return this.mimeTypes[i];
-      }
-    }
-    // Not found.
-    return null;
-  },
-
+var mimeTypeData = {
   // Mainly From:
   // http://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?view=markup
   // https://developers.google.com/drive/web/mime-types
-  mimeTypes: [
+  mimeTypeData: [
     {
       "mimeType": "application/x-gzip",
       "fileExtensions": ".gz",
