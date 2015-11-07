@@ -18,15 +18,15 @@ var mimeTypeData = {
   // Mainly From:
   // http://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?view=markup
   // https://developers.google.com/drive/web/mime-types
-  mimeTypeData: [
+  mimeTypeDataArray: [
     {
       "mimeType": "application/x-gzip",
       "fileExtensions": ".gz",
-      "friendlyName": ""
+      "friendlyName": "gzip"
     }, {
       "mimeType": "application/x-tar",
       "fileExtensions": ".tar,.tgz",
-      "friendlyName": ""
+      "friendlyName": "tar"
     }, {
       "mimeType": "application/andrew-inset",
       "fileExtensions": ".ez",
@@ -82,7 +82,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/java-archive",
       "fileExtensions": ".jar",
-      "friendlyName": ""
+      "friendlyName": "JAR"
     }, {
       "mimeType": "application/java-serialized-object",
       "fileExtensions": ".ser",
@@ -90,15 +90,15 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/java-vm",
       "fileExtensions": ".class",
-      "friendlyName": ""
+      "friendlyName": "CLASS"
     }, {
       "mimeType": "application/javascript",
       "fileExtensions": ".js",
-      "friendlyName": ""
+      "friendlyName": "JavaScript"
     }, {
       "mimeType": "application/json",
       "fileExtensions": ".json",
-      "friendlyName": ""
+      "friendlyName": "JSON"
     }, {
       "mimeType": "application/lost+xml",
       "fileExtensions": ".lostxml",
@@ -138,7 +138,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/msword",
       "fileExtensions": ".doc,.dot",
-      "friendlyName": ""
+      "friendlyName": "Word"
     }, {
       "mimeType": "application/mxf",
       "fileExtensions": ".mxf",
@@ -162,7 +162,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/onenote",
       "fileExtensions": ".onetoc,.onetoc2,.onetmp,.onepkg",
-      "friendlyName": ""
+      "friendlyName": "One Note"
     }, {
       "mimeType": "application/patch-ops-error+xml",
       "fileExtensions": ".xer",
@@ -170,7 +170,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/pdf",
       "fileExtensions": ".pdf",
-      "friendlyName": ""
+      "friendlyName": "PDF"
     }, {
       "mimeType": "application/pgp-encrypted",
       "fileExtensions": ".pgp",
@@ -218,7 +218,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/postscript",
       "fileExtensions": ".ai,.eps,.ps",
-      "friendlyName": ""
+      "friendlyName": "Postscript"
     }, {
       "mimeType": "application/prs.cww",
       "fileExtensions": ".cww",
@@ -254,11 +254,11 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/rss+xml",
       "fileExtensions": ".rss",
-      "friendlyName": ""
+      "friendlyName": "RSS"
     }, {
       "mimeType": "application/rtf",
       "fileExtensions": ".rtf",
-      "friendlyName": ""
+      "friendlyName": "RTF"
     }, {
       "mimeType": "application/sbml+xml",
       "fileExtensions": ".sbml",
@@ -358,7 +358,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/vnd.adobe.air-application-installer-package+zip",
       "fileExtensions": ".air",
-      "friendlyName": ""
+      "friendlyName": "Adobe Air"
     }, {
       "mimeType": "application/vnd.adobe.xdp+xml",
       "fileExtensions": ".xdp",
@@ -390,7 +390,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/vnd.android.package-archive",
       "fileExtensions": ".apk",
-      "friendlyName": ""
+      "friendlyName": "APK"
     }, {
       "mimeType": "application/vnd.anser-web-certificate-issue-initiation",
       "fileExtensions": ".cii",
@@ -1258,7 +1258,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
       "fileExtensions": ".pptx",
-      "friendlyName": ""
+      "friendlyName": "Powerpoint"
     }, {
       "mimeType": "application/vnd.openxmlformats-officedocument.presentationml.slide",
       "fileExtensions": ".sldx",
@@ -1274,7 +1274,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
       "fileExtensions": ".xlsx",
-      "friendlyName": ""
+      "friendlyName": "Excel"
     }, {
       "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
       "fileExtensions": ".xltx",
@@ -1282,11 +1282,11 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       "fileExtensions": ".docx",
-      "friendlyName": ""
+      "friendlyName": "Word"
     }, {
       "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
       "fileExtensions": ".dotx",
-      "friendlyName": ""
+      "friendlyName": "Word Template"
     }, {
       "mimeType": "application/vnd.osgi.dp",
       "fileExtensions": ".dp",
@@ -1966,7 +1966,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/xml",
       "fileExtensions": ".xml,.xsl",
-      "friendlyName": ""
+      "friendlyName": "XML"
     }, {
       "mimeType": "application/xml-dtd",
       "fileExtensions": ".dtd",

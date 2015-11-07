@@ -1,6 +1,6 @@
 # nuxeo-util-mimetypes
 
-An element for dealing with MIME types, file extensions, and (optionally) friendly file names.
+A polymer element for dealing with MIME types, file extensions, and (optionally) friendly file names.
 
 ## Requirements
 
@@ -13,12 +13,6 @@ Navigate to the folder containing `nuxeo-util-mimetypes.html` in shell/terminal 
     bower install
 
 ## Usage
-
-You can run it via `polyserve` but you may need to make a few changes:
-
-* Edit `demo/index.html` and modify the `<nuxeo-connection>` element with the URL for the server. For example:
-  * `<nuxeo-connection url="http://localhost:8080/nuxeo"></nuxeo-connection>` (default).
-  * The user name and password can be included here as well. See the [`nuxeo-elements` documentation](https://doc.nuxeo.com/x/XJCRAQ).
 
 Then run it:
 

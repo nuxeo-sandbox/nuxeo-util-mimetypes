@@ -26,34 +26,19 @@ Contributors:
 
   <link rel="import" href="../nuxeo-util-mimetypes.html">
 
-  <style is="custom-style">
-    body {
-      background: #fafafa;
-      font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #444;
-    }
-  </style>
-
 </head>
 
 <body unresolved class="fullbleed">
 
-  <template is="dom-bind" id="app">
+  <template is="dom-bind">
 
     <h1>Get File Extensions from MIME Type</h1>
-    <p>application/pdf ->
-      <nuxeo-util-mimetypes mime-type="application/pdf"></nuxeo-util-mimetypes>
-    </p>
-
-    <h1>Get MIME Type from File Extension</h1>
-    <p>.gdoc ->
-      <nuxeo-util-mimetypes file-extension=".gdoc"></nuxeo-util-mimetypes>
-    </p>
+    <nuxeo-util-mimetypes mime-type="application/pdf" data="{{pdfExts}}"></nuxeo-util-mimetypes>
+    <p>application/pdf -> [[pdfExts]]</p>
 
     <h1>Get "Friendly Name" from from MIME Type</h1>
-    <p>.gsheet ->
-      <nuxeo-util-mimetypes mime-type="application/vnd.google-apps.spreadsheet" friendly="true"></nuxeo-util-mimetypes>
-    </p>
+    <nuxeo-util-mimetypes mime-type="application/vnd.google-apps.spreadsheet" friendly="true" data={{gSheetFriendly}}></nuxeo-util-mimetypes>
+    <p>application/vnd.google-apps.spreadsheet -> [[gSheetFriendly]]</p>
 
   </template>
 </body>

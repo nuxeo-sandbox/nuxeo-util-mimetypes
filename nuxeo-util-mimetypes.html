@@ -14,16 +14,24 @@ Lesser General Public License for more details.
 Contributors:
   Josh Fletcher <jfletcher@nuxeo.com>
 -->
+<link rel="import" href="../polymer/polymer.html">
 <!--
-An element.
+A polymer element for converting MIME Types into file extensions for friendly names.
 
 Example:
 
-
+    <nuxeo-util-mimetypes mime-type="application/vnd.google-apps.spreadsheet"
+                          friendly="true"
+                          data={{gSheetFriendly}}>
+    </nuxeo-util-mimetypes>
 
 @group Nuxeo Utils
 @element nuxeo-util-mimetypes
 @demo demo/index.html
+-->
+
+<!-- This is just the list of mime types, file extensions, and friendly names.
+I put it in a separate file to keep things cleaner.
 -->
 <script src="mime-type-data.js"></script>
 
@@ -32,17 +40,41 @@ Example:
 
     is: 'nuxeo-util-mimetypes',
 
-    // Expose startDate and endDate as properties
     properties: {
-      mimeType: String,
-      fileExtension: String,
-      friendly: String
+      mimeType: {
+        type: String,
+        observer: '_query'
+      },
+      friendly: {
+        type: String,
+        observer: '_query'
+      },
+      data: {
+        type: String,
+        notify: true
+      }
     },
 
-    getExtsFromMimeType: function (mimeType) {
-      for (var i = 0; i < this.mimeTypeData.length; i++) {
-        if (this.mimeTypeData[i].mimeType === mimeType) {
-          return this.mimeTypeData[i].fileExtensions;
+
+    _query: function () {
+      var mimeTypeObject;
+
+      if (this.mimeType) {
+        mimeTypeObject = this.getMimeTypeObject(this.mimeType);
+        if (this.friendly) {
+          this.data = mimeTypeObject.friendlyName;
+
+        } else {
+          this.data = mimeTypeObject.fileExtensions;
+        }
+      }
+    },
+
+
+    getMimeTypeObject: function (mimeType) {
+      for (var i = 0; i < mimeTypeData.mimeTypeDataArray.length; i++) {
+        if (mimeTypeData.mimeTypeDataArray[i].mimeType === mimeType) {
+          return mimeTypeData.mimeTypeDataArray[i];
         }
       }
       // Not found.
