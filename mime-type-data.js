@@ -2322,7 +2322,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "text/plain",
       "fileExtensions": ".txt,.text,.conf,.def,.list,.log,.in",
-      "friendlyName": ""
+      "friendlyName": "Plain Text"
     }, {
       "mimeType": "text/prs.lines.tag",
       "fileExtensions": ".dsc",
@@ -2466,7 +2466,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "video/mp4",
       "fileExtensions": ".mp4,.mp4v,.mpg4,.m4v",
-      "friendlyName": ""
+      "friendlyName": "MP4"
     }, {
       "mimeType": "video/webm",
       "fileExtensions": ".webm",
@@ -2482,7 +2482,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "video/quicktime",
       "fileExtensions": ".qt,.mov",
-      "friendlyName": ""
+      "friendlyName": "Apple Quicktime"
     }, {
       "mimeType": "video/vnd.fvt",
       "fileExtensions": ".fvt",
