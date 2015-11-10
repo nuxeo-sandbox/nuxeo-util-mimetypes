@@ -1,6 +1,6 @@
 {
   "name": "nuxeo-util-mimetypes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [
     "Josh Fletcher <jfletcher@nuxeo.com>"
   ],
@@ -14,7 +14,7 @@
     "nuxeo-util-mimetypes.html"
   ],
   "license": "LGPL",
-  "homepage": "https://github.com/jfletcher-nuxeo/nuxeo-util-mimetypes",
+  "homepage": "https://github.com/nuxeo-sandbox/nuxeo-util-mimetypes",
   "ignore": [
     "/.*",
     "/test/"
