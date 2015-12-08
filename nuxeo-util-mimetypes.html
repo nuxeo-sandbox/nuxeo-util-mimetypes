@@ -40,26 +40,40 @@ Example:
     is: 'nuxeo-util-mimetypes',
 
     properties: {
+
+      /**
+       * Set this to the mime-type value.
+       */
       mimeType: {
         type: String,
-        observer: '_query'
+        observer: 'query'
       },
+
+      /**
+       * Set to `true` if you want the friendly name, `false` if you want the extension.
+       */
       friendly: {
         type: String,
-        observer: '_query'
+        observer: 'query'
       },
+
+      /**
+       * Extension or friendly name is returned here.
+       */
       data: {
         type: String,
         notify: true
       }
     },
 
-
-    _query: function () {
+    /**
+     * Fetch the requested value. 
+     */
+    query: function () {
       var mimeTypeObject;
 
       if (this.mimeType) {
-        mimeTypeObject = this.getMimeTypeObject(this.mimeType);
+        mimeTypeObject = this._getMimeTypeObject(this.mimeType);
         if (this.friendly) {
           this.data = mimeTypeObject.friendlyName;
 
@@ -71,7 +85,10 @@ Example:
     },
 
 
-    getMimeTypeObject: function (mimeType) {
+    /**
+     * Given {mimeType}, locate the corresponding JSON object.
+     */
+    _getMimeTypeObject: function (mimeType) {
       for (var i = 0; i < mimeTypeData.mimeTypeDataArray.length; i++) {
         if (mimeTypeData.mimeTypeDataArray[i].mimeType === mimeType) {
           return mimeTypeData.mimeTypeDataArray[i];
