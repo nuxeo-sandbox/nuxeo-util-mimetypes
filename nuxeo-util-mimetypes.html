@@ -15,8 +15,13 @@ Contributors:
   Josh Fletcher <jfletcher@nuxeo.com>
 -->
 <link rel="import" href="../polymer/polymer.html">
+<!-- This is just the list of mime types, file extensions, and friendly names.
+I put it in a separate file to keep things cleaner.
+-->
+<script src="mime-type-data.js"></script>
+
 <!--
-A polymer element for converting MIME Types into file extensions for friendly names.
+A polymer element for converting MIME Types into file extensions or friendly names.
 
 Example:
 
@@ -29,12 +34,6 @@ Example:
 @element nuxeo-util-mimetypes
 @demo demo/index.html
 -->
-
-<!-- This is just the list of mime types, file extensions, and friendly names.
-I put it in a separate file to keep things cleaner.
--->
-<script src="mime-type-data.js"></script>
-
 <script>
   Polymer({
 
