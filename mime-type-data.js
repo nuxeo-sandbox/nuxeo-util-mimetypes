@@ -1182,63 +1182,63 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/vnd.oasis.opendocument.chart",
       "fileExtensions": ".odc",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Chart"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.chart-template",
       "fileExtensions": ".otc",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Chart Template"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.database",
       "fileExtensions": ".odb",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Database"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.formula",
       "fileExtensions": ".odf",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Forumula"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.formula-template",
       "fileExtensions": ".odft",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Formula Template"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.graphics",
       "fileExtensions": ".odg",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Graphics"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.graphics-template",
       "fileExtensions": ".otg",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Graphics Template"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.image",
       "fileExtensions": ".odi",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Image"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.image-template",
       "fileExtensions": ".oti",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Image Template"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.presentation",
       "fileExtensions": ".odp",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Presentation"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.spreadsheet",
       "fileExtensions": ".ods",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Spreadsheet"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.spreadsheet-template",
       "fileExtensions": ".ots",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Spreadsheet Template"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.text",
       "fileExtensions": ".odt",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Text"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.text-master",
       "fileExtensions": ".otm",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Text Master"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.text-template",
       "fileExtensions": ".ott",
-      "friendlyName": ""
+      "friendlyName": "OpenDocument Text Template"
     }, {
       "mimeType": "application/vnd.oasis.opendocument.text-web",
       "fileExtensions": ".oth",
