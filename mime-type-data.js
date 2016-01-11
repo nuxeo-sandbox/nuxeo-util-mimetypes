@@ -1034,7 +1034,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/vnd.ms-excel",
       "fileExtensions": ".xls,.xlm,.xla,.xlc,.xlt,.xlw",
-      "friendlyName": ""
+      "friendlyName": "Excel"
     }, {
       "mimeType": "application/vnd.ms-excel.addin.macroenabled.12",
       "fileExtensions": ".xlam",
@@ -1274,7 +1274,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
       "fileExtensions": ".xlsx",
-      "friendlyName": "Excel"
+      "friendlyName": "Excel (xlsx)"
     }, {
       "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
       "fileExtensions": ".xltx",
@@ -2134,7 +2134,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "image/jpeg",
       "fileExtensions": ".jpeg,.jpg,.jpe",
-      "friendlyName": ""
+      "friendlyName": "JPG"
     }, {
       "mimeType": "image/pict",
       "fileExtensions": ".pict,.pic,.pct",
@@ -2142,7 +2142,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "image/png",
       "fileExtensions": ".png",
-      "friendlyName": ""
+      "friendlyName": "PNG"
     }, {
       "mimeType": "image/prs.btif",
       "fileExtensions": ".btif",
@@ -2154,7 +2154,7 @@ var mimeTypeData = {
     }, {
       "mimeType": "image/tiff",
       "fileExtensions": ".tiff,.tif",
-      "friendlyName": ""
+      "friendlyName": "TIFF"
     }, {
       "mimeType": "image/vnd.adobe.photoshop",
       "fileExtensions": ".psd",
